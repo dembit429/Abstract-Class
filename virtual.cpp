@@ -1,16 +1,18 @@
 #include "virtual.h"
 
-Square::Square()
+box::box()
 {
 	a = 0;
+	b = 0;
 }
 
-Square::Square(float a)
+box::box(float a, float b)
 {
 	this->a = a;
+	this->b = b;
 }
 
-float Square::calcArea()
+float box::perimetr()
 {
-	return a * a;
+	return (a + b) * 2;
 }
