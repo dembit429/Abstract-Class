@@ -1,47 +1,47 @@
 #include "virtual.h"
 
-box::box()
+rectangle::rectangle()
 {
 	a = 0;
 	b = 0;
 }
 
-box::box(float a, float b)
+rectangle::rectangle(float a, float b)
 {
 	this->a = a;
 	this->b = b;
 }
 
-box::box(box& b)
+rectangle::rectangle(rectangle& b)
 {
 	this->a = b.a;
 	this->b = b.b;
 }
 
-float box::perimetr()
+float rectangle::perimetr()
 {
 	return (a + b) * 2;
 }
 
-pararelo::pararelo()
+paralelo::paralelo()
 {
 	a = 0;
 	b = 0;
 }
 
-pararelo::pararelo(float a, float b)
+paralelo::paralelo(float a, float b)
 {
 	this->a = a;
 	this->b = b;
 }
 
-pararelo::pararelo(pararelo& p)
+paralelo::paralelo(paralelo& p)
 {
 	this->a = p.a;
 	this->b = p.b;
 }
 
-float pararelo::perimetr()
+float paralelo::perimetr()
 {
 	return (a+b) * 2;
 }
@@ -72,7 +72,7 @@ float triangle::perimetr()
 	return a + b + c;
 }
 
-trapecia::trapecia()
+trapeze::trapeze()
 {
 	a = 0;
 	b = 0;
@@ -80,7 +80,7 @@ trapecia::trapecia()
 	d = 0;
 }
 
-trapecia::trapecia(trapecia& t)
+trapeze::trapeze(trapeze& t)
 {
 	this->a = t.a;
 	this->b = t.b;
@@ -88,7 +88,7 @@ trapecia::trapecia(trapecia& t)
 	this->d = t.d;
 }
 
-trapecia::trapecia(float a, float b, float c, float d)
+trapeze::trapeze(float a, float b, float c, float d)
 {
 	this->a = a;
 	this->b = b;
@@ -97,7 +97,7 @@ trapecia::trapecia(float a, float b, float c, float d)
 
 }
 
-float trapecia::perimetr()
+float trapeze::perimetr()
 {
 	return a+b+c+d;
 }

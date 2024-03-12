@@ -7,33 +7,32 @@ public:
 	virtual float perimetr() = 0;
 };
 
-class box :public shape {
+class rectangle :public shape {
 protected:
-	float a;
-	float b;
+	float a,b;
+
 public:
-	box();
-	box(float a, float b);
-	box(box& b);
+	rectangle();
+	rectangle(float a, float b);
+	rectangle(rectangle& b);
 	float perimetr();
 };
 
-class pararelo:public shape {
+class paralelo:public shape {
 protected:
-	float a;
-	float b;
+	float a,b;
+
 public:
-	pararelo();
-	pararelo(float a,float b);
-	pararelo(pararelo& p);
+	paralelo();
+	paralelo(float a,float b);
+	paralelo(paralelo& p);
 	float perimetr();
 };
 
 class triangle :public shape {
 protected:
-	float a;
-	float b;
-	float c;
+	float a,b,c;
+
 public:
 	triangle();
 	triangle(float a, float b, float c);
@@ -41,16 +40,14 @@ public:
 	float perimetr();
 };
 
-class trapecia :public shape {
+class trapeze :public shape {
 protected:
-	float a;
-	float b;
-	float c;
-	float d;
+	float a,b,c,d;
+
 public:
-	trapecia();
-	trapecia(trapecia& t);
-	trapecia(float a,float b,float c,float d);
+	trapeze();
+	trapeze(trapeze& t);
+	trapeze(float a,float b,float c,float d);
 	float perimetr();
 
 };
