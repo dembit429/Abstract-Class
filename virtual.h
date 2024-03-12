@@ -1,4 +1,5 @@
 #pragma once
+#pragma once
 #include <iostream>
 using namespace std;
 
@@ -9,7 +10,7 @@ public:
 
 class rectangle :public shape {
 protected:
-	float a,b;
+	float a, b;
 
 public:
 	rectangle();
@@ -18,20 +19,20 @@ public:
 	float perimetr();
 };
 
-class paralelo:public shape {
+class paralelo :public shape {
 protected:
-	float a,b;
+	float a, b;
 
 public:
 	paralelo();
-	paralelo(float a,float b);
+	paralelo(float a, float b);
 	paralelo(paralelo& p);
 	float perimetr();
 };
 
 class triangle :public shape {
 protected:
-	float a,b,c;
+	float a, b, c;
 
 public:
 	triangle();
@@ -42,12 +43,12 @@ public:
 
 class trapeze :public shape {
 protected:
-	float a,b,c,d;
+	float a, b, c, d;
 
 public:
 	trapeze();
 	trapeze(trapeze& t);
-	trapeze(float a,float b,float c,float d);
+	trapeze(float a, float b, float c, float d);
 	float perimetr();
 
 };

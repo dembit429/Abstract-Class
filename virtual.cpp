@@ -43,7 +43,7 @@ paralelo::paralelo(paralelo& p)
 
 float paralelo::perimetr()
 {
-	return (a+b) * 2;
+	return (a + b) * 2;
 }
 
 triangle::triangle()
@@ -99,5 +99,5 @@ trapeze::trapeze(float a, float b, float c, float d)
 
 float trapeze::perimetr()
 {
-	return a+b+c+d;
+	return a + b + c + d;
 }
