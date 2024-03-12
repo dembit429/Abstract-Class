@@ -14,6 +14,7 @@ protected:
 public:
 	box();
 	box(float a, float b);
+	box(box& b);
 	float perimetr();
 };
 
@@ -23,6 +24,33 @@ protected:
 	float b;
 public:
 	pararelo();
-	pararelo(float radius);
-	float calcArea();
+	pararelo(float a,float b);
+	pararelo(pararelo& p);
+	float perimetr();
+};
+
+class triangle :public shape {
+protected:
+	float a;
+	float b;
+	float c;
+public:
+	triangle();
+	triangle(float a, float b, float c);
+	triangle(triangle& t);
+	float perimetr();
+};
+
+class trapecia :public shape {
+protected:
+	float a;
+	float b;
+	float c;
+	float d;
+public:
+	trapecia();
+	trapecia(trapecia& t);
+	trapecia(float a,float b,float c,float d);
+	float perimetr();
+
 };
