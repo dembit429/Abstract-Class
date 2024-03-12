@@ -4,45 +4,53 @@ using namespace std;
 
 class shape {
 public:
-	virtual float calcArea() = 0;
+	virtual float perimetr() = 0;
 };
 
-class Square :public shape {
-protected:
-	float a;
-public:
-	Square();
-	Square(float a);
-	float calcArea();
-
-};
 class box :public shape {
 protected:
 	float a;
 	float b;
 public:
 	box();
-	box(float a, float b) {
-		this->a = a;
-		this->b = b;
-	}
-	float calcArea()
-	{
-		return a * b;
-	};
+	box(float a, float b);
+	box(box& b);
+	float perimetr();
 };
 
-class circle:public shape {
+class pararelo:public shape {
 protected:
-	float radius;
+	float a;
+	float b;
 public:
-	circle() {
-		radius = 0;
-	}
-	circle(float radius) {
-		this->radius = radius;
-	}
-	float calcArea() {
-		return 3.14 * pow(radius,2);
-	}
+	pararelo();
+	pararelo(float a,float b);
+	pararelo(pararelo& p);
+	float perimetr();
+};
+
+class triangle :public shape {
+protected:
+	float a;
+	float b;
+	float c;
+public:
+	triangle();
+	triangle(float a, float b, float c);
+	triangle(triangle& t);
+	float perimetr();
+};
+
+class trapecia :public shape {
+protected:
+	float a;
+	float b;
+	float c;
+	float d;
+public:
+	trapecia();
+	trapecia(trapecia& t);
+	trapecia(float a,float b,float c,float d);
+	float perimetr();
+
 };
