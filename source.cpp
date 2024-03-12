@@ -2,7 +2,7 @@
 
 int main() {
 
-	shape* array[5];
+	shape* array[4];
 
 	rectangle rect(4, 5);
 	triangle tria(9,5,7);
