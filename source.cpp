@@ -19,8 +19,12 @@ int main() {
 	//	cout << "Perimeter " << i + 1 << ": " << array[i]->perimetr() << endl;
 	//}
 	int menu;
-	cout << "What perimeter do you need?\n 1.Rectangle\n 2.Triangle\n 3.Paralelogram\n 4.Trapeze\n 5.All\nType number:"; cin >> menu;
+	cout << "What perimeter do you need?\n 1.Rectangle\n 2.Triangle\n 3.Paralelogram\n 4.Trapeze\n 5.All\n 6.Exit\nType number:"; cin >> menu;
 	switch (menu) {
+		if (menu < 1 || menu>6) {
+			cout << "Invalid number! Try again";
+			return main();
+	}
 	case 1:
 		cout << "Rectangle perimeter = " << rect.perimetr() << endl; return main();
 	case 2:
@@ -33,6 +37,8 @@ int main() {
 		for (int i = 0; i < 4; i++) {
 			cout << "Perimeter " << i + 1 << " = " << array[i]->perimetr() << endl;
 		}return main();
+	case 6:
+		return 0;
 	}
 
 	return 0;
