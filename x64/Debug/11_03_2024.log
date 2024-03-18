@@ -1,3 +1,6 @@
-﻿  source.cpp
-D:\LNU\11_03_2024\virtual.h(56,15): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
-  11_03_2024.vcxproj -> D:\LNU\11_03_2024\x64\Debug\11_03_2024.exe
+﻿D:\Visual Stuido 2022\2\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(531,5): warning MSB8028: The intermediate directory (x64\Debug\) contains files shared from another project (Project5.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+source.obj : error LNK2019: unresolved external symbol "public: __cdecl rectangle::rectangle(float,float)" (??0rectangle@@QEAA@MM@Z) referenced in function main
+source.obj : error LNK2019: unresolved external symbol "public: __cdecl paralelo::paralelo(float,float)" (??0paralelo@@QEAA@MM@Z) referenced in function main
+source.obj : error LNK2019: unresolved external symbol "public: __cdecl triangle::triangle(float,float,float)" (??0triangle@@QEAA@MMM@Z) referenced in function main
+source.obj : error LNK2019: unresolved external symbol "public: __cdecl trapeze::trapeze(float,float,float,float)" (??0trapeze@@QEAA@MMMM@Z) referenced in function main
+D:\Abstract-Class\x64\Debug\11_03_2024.exe : fatal error LNK1120: 4 unresolved externals
