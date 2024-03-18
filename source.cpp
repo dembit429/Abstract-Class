@@ -20,11 +20,11 @@ int main() {
 	//}
 	int menu;
 	cout << "What perimeter do you need?\n 1.Rectangle\n 2.Triangle\n 3.Paralelogram\n 4.Trapeze\n 5.All\n 6.Exit\nType number:"; cin >> menu;
-	switch (menu) {
-		if (menu < 1 || menu>6) {
-			cout << "Invalid number! Try again";
-			return main();
+	if (menu < 1 || menu>6) {
+		cout << "Invalid number! Try again" << endl;
+		return main();
 	}
+	switch (menu) {
 	case 1:
 		cout << "Rectangle perimeter = " << rect.perimetr() << endl; return main();
 	case 2:
